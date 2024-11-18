@@ -1,0 +1,51 @@
+//      Practical-1
+import java.sql.*;
+import java.util.Scanner;
+
+public class Practical1{
+	public static void main(String [] args){
+		try{
+			Scanner sc = new Scanner(System.in);
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/newjdbc","root","");
+			String q = "insert into practical1 values (?,?,?)";
+			
+			PreparedStatement ps = con.prepareStatement(q);
+			
+			System.out.println("Enter values in table: ");
+			System.out.print("Id: ");
+			int id = sc.nextInt();
+			
+			System.out.print("Name: ");
+			String name = sc.next();
+		
+			System.out.print("City: ");
+			String city = sc.next();
+
+			ps.setInt(1, id);
+			ps.setString(2, name);
+			ps.setString(3, city);
+
+			int i = ps.executeUpdate();
+			if(i!=0){
+				String q1 = "select * from practical1";
+				Statement stmt = con.createStatement();
+				ResultSet rs = stmt.executeQuery(q1);
+				
+				while(rs.next()){
+					System.out.println("-----------------------------------------------");
+					System.out.print("id: "+rs.getInt(1)+"\nname: "+rs.getString(2)+"\ncity: "+rs.getString(3));
+				}
+				System.out.println("Data fetched....");
+			}
+		}catch(Exception e){
+			System.out.println("Error occured");
+		}
+	}
+}
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+//    Practical-2
+
+				
