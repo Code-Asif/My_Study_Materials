@@ -1,0 +1,187 @@
+// Practical : 1
+using System;
+public class Student
+{
+    String name;
+    double cgpi;
+    int sem;
+    public Student() {
+        Console.WriteLine("1. Calling parameterless constructor...");
+    }
+    public Student(String name)
+    {
+        this.name = name;
+        Console.WriteLine("2. Name: "+ this.name);
+    }
+    public Student(String name, double cgpi)
+    {
+        this.name = name;
+        this.cgpi = cgpi;
+        Console.WriteLine("3. Name: "+ this.name + " CGPI: "+ this.cgpi);
+    }
+    public Student(String name, double cgpi, int sem)
+    {
+        this.name = name;
+        this.cgpi = cgpi;
+        this.sem = sem;
+        Console.WriteLine("4. Name: "+ this.name + " CGPI: "+ this.cgpi +" Sem: "+ this.sem);
+    }
+    public static void Main(String[] args)
+    {
+        Console.WriteLine("Menu\n");
+        Console.WriteLine("1. Parameterless Constructor...");
+        Console.WriteLine("2. Constructor with one parameter...");
+        Console.WriteLine("3. Constructor with two parameter...");
+        Console.WriteLine("4. Constructor with three parameter...");
+        Console.WriteLine("Enter: ");
+
+        int n = Convert.ToInt32(Console.ReadLine());
+        switch (n)
+        {
+            case 1: Student s1 = new Student();
+                break;
+            case 2: Student s2 = new Student("Asif");
+                break;
+            case 3: Student s3 = new Student("Asif", 9.32);
+                break;
+            case 4: Student s4 = new Student("Asif", 9.32, 5);
+                break;
+
+            default: Console.WriteLine("Invalid Input");
+                break;
+        }
+    }
+}
+
+//--------------------------------------------------------------
+
+// Practical : 2
+interface C1
+{
+    void methodC1();
+}
+interface C2
+{
+    void methodC2();
+}
+interface C3
+{
+    void methodC3();
+}
+public class IC : C1, C2, C3
+{
+    public void methodC1()
+    {
+        Console.WriteLine("Method C1");
+    }
+    public void methodC2()
+    {
+        Console.WriteLine("Method C2");
+    }
+    public void methodC3()
+    {
+        Console.WriteLine("Method C3");
+    }
+}
+public class R1
+{
+    public void methodR1()
+    {
+        Console.WriteLine("MethodR1");
+    }
+}
+class R11 : R1
+{
+    public void methodR11()
+    {
+        Console.WriteLine("MethodR11");
+    }
+}
+class R12 : R1
+{
+    public void methodR12()
+    {
+        Console.WriteLine("MethodR12");
+    }
+}
+class R111 : R11
+{
+    public void methodR111()
+    {
+        Console.WriteLine("MethodR111");
+    }
+}
+class R112 : R12
+{
+    public void methodR112()
+    {
+        Console.WriteLine("MethodR112");
+    }
+}
+public class Prac2
+{
+    public static void Main(String[] args)
+    {
+        IC obj1 = new IC();
+        obj1.methodC1();
+        obj1.methodC2();
+        obj1.methodC3();
+
+        R111 r1 = new R111();
+        r1.methodR1();
+        r1.methodR11();
+        r1.methodR111();
+
+        R112 r2 = new R112();
+        r2.methodR112();
+        r2.methodR12();
+    }
+}
+
+//-----------------------------------------------------------
+
+// Practical : 3
+public class Calculator
+{
+    public void Add(int a, int b)
+    {
+        Console.WriteLine("Add: "+a + " + " + b + ": "+(a+b));
+    }
+    public void Add(int a, int b, int c)
+    {
+        Console.WriteLine("Add: "+a + " + " + b + " + "+ c + ": "+(a+b+c));
+    }
+    public int Divide(int a, int b)
+    {
+        int d = a / b;
+        return d;
+    }
+}
+class Prac3
+{
+    public static void Main(String [] args)
+    {
+        Console.WriteLine("Choose :\n");
+        Console.WriteLine("1. Polymorphism");
+        Console.WriteLine("2. Exception Handling\n");
+        int n = Convert.ToInt32(Console.ReadLine());
+        switch (n)
+        {
+            case 1: Calculator c = new Calculator();
+                    c.Add(1, 2);
+                    c.Add(2, 3, 4);
+                break;
+            case 2: Console.WriteLine("Exception Handling...");
+                    Calculator c1 = new Calculator();
+                try
+                {
+                    int d = c1.Divide(10, 0);
+
+                }catch(ArithmeticException e)
+                {
+                    Console.WriteLine(e);
+                }
+                break;
+        }
+    }
+}
