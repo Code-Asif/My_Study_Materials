@@ -1,0 +1,24 @@
+show dbs
+
+use db1
+
+db.createCollection('students')
+
+show collections
+
+db.students.drop
+
+db.students.insertOne({sname: "Asif Alam", city: "Patna", age:21})
+
+db.students.insertMany([{},{}])
+
+db.students.find()
+
+db.students.find({sname: "Asif Alam"})
+
+db.students.updateOne({sname:"Asif Alam"}, {$set:{city:"Hajipur"}});
+
+db.students.updateOne({sname:"AAA"}, {$set:{city:"Mumbai", branch:"CE", age:20}, {upsert:true}});
+
+db.students.deleteOne({sname: "Md Afzal"});
+

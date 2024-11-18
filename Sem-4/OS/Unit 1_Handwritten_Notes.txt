@@ -1,0 +1,72 @@
+Unit 1
+------------------------------------------------------------------------------------------------------------------------------------------------
+0. Operating System: An operating system is a program that act as an interface between user computer and computer hardware. It is a system software that enables computer hardware to communicates and operate with other software.
+
+1. Functions of operating System:
+	Process Management 
+	File 
+	Resource
+	Security
+	Memory
+	Communication
+
+2. Types of OS
+	1. Batch Operation System
+	2. Real Time
+	3. Time Sharing
+	4. Multiprocessing
+	5. Multiprogramming
+	6. Embedded
+	7. Distributed
+	8. Network
+	9. Single User
+
+3. Kernel: It is a core of an operating system of a computer
+4. Monolithic OS: It controls all aspects of the OS operation including file management, process, memory, device and operational management.
+
+
+5. 	Parameter				Monolithic							Microkernel
+
+1. 	Size				Big in size							Small in size
+2. 	Maintanence			Extra time and resources is neeeded				Easy to handle
+3. 	Failure				Failure of one component leads to down the entire system	Failure of one component doesn`t affect other
+4. 	Processing speed		Executing speed is high						Execution speed is low
+5.	Communication			It uses signal and socket for IPC implementation		It uses messaging queue to implement IPC
+6. 	Debugging			Complex								Simple	
+7. 	Functionality			Difficult to add new functionality				Easy to add new functionality
+8.	Extend				Its not easy to extends						Its easy to extend
+9. 	Example				Microsoft Windows 95						Mac OS X
+
+	
+6.	Linux									Unix
+
+1. The source code of linux is freely available for its user		The source code for unix is not freely available
+2. It has Graphical user interface along with Command line interface	It has only command line interface
+3. It is portable and flexible						Unix is not portable
+4. versions of linux are- Ubuntu, Linux Mint, Solaris, etc		versions of Unix are- AIS, HP-UX, BSD, Iris, etc
+
+7. System Call: It is a way for appliaction program to interact with Kernel or Operation system. A computer program make a system call when it make a request to the operating system`s kernel. System call provides the services of Operating system to the user application.
+
+8. Types of System call:	
+				1. Process Management: fork(), 
+				2. Memory: mlock(), munlock(), mmap()
+				3. Device:SetConsoleMode(), ReadConsole(), WriteConsole()
+				4. File: open(), close(), write(), read(), delete()
+				5. Interprocess Communication: pipe(), socket(), semget(), msgget()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+CN prac10 (Commands)
+
+1. enable
+2. clock set
+3. password
+4. reset
+5. hostname
+6. line console 0
+7. exit
+8. username __ password __
+9. ip address 10.10.10.1 255.0.0.0
+10. no shutdown
+11. 

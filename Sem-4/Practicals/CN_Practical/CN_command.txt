@@ -1,0 +1,19 @@
+ipconfig
+ipconfig/all
+getmac
+hostname
+ping www.google.com
+nslookup 
+	facebook.com
+tracert www.google.com
+tracert
+pathping www.google.com
+route print
+netstat
+netstat -a
+netstat -n
+netstat -e
+systeminfo
+nbtstat
+nbtstat -r
+arp
