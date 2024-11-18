@@ -1,0 +1,1071 @@
+#Practical 1.2
+code:- public class Main{
+		public static void main(String [] args){
+			System.out.println("Welcome to MEFGI");
+		}
+	}
+
+#Practical 1.3
+code:- public class Main{
+		public static void main(String [] args){
+			System.out.println("Using Single println");
+			SinglePrint();
+			
+			System.out.println("Using multiple println");
+			MultiplePrint();
+		}
+
+		public static void SinglePrint(){
+			System.out.println("Asif Alam\n Hajipur, Baghmali\n Vaishali\n 844101\n Bihar");
+		}
+
+		public static void MultiplePrint(){
+			System.out.println("Asif Alam");
+			System.out.println("Hajipur, Baghmali");
+			System.out.println("Vaishali");
+			System.out.println("844101");
+			System.out.println("Bihar");
+		}
+	}
+
+#Practcal 1.4
+code:- public class Main{
+		public static void main(String [] args){
+			int a = 10;
+			int b = 20;
+			a = a+b;
+			b = a-b;
+			a = a-b;
+			System.out.println("Value of A = "+a+" and B = "+b);
+		}
+	}
+
+#Practical 1.5
+code:-import java.util.Scanner;
+	public class Main{
+		public static void main(String [] args){
+			Scanner sc = new Scanner(System.in);
+			System.out.print("Enter a number: ");
+			int a = sc.nextInt();
+			
+			System.out.print("Enter another number: ");
+			int b = sc.nextInt();
+			
+			System.out.println("Addition = "+(a+b));
+			System.out.println("Subtraction = "+(a-b));
+		}
+	}
+
+#Practical 2.1
+code:-public class Main{
+		public static void main(String [] args){
+			System.out.println("Hello world");
+		}
+	}
+
+#Practical 2.2
+code:-public class Main{
+		public static void main(String [] args){
+			System.out.println("Marwadi University");
+			System.out.println("Rajkot, Morbi Highway");
+			System.out.println("360003");
+		}
+	}
+
+#Practical 2.3
+code:-public class Main{
+		public static void main(String [] args){
+			int a = 10;
+			int b = 20;
+			int temp = a;
+			a = b;
+			b = temp;
+			System.out.println("The value of A= "+a+" and B = "+b);
+		}
+	}
+
+#Practical 2.4
+code:-
+import java.util.Scanner;
+
+public class Prac2_4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a: ");
+        int a = sc.nextInt();
+
+        System.out.println("Enter b: ");
+        int b = sc.nextInt();
+
+        System.out.println("Multiplication = "+(a*b));
+        System.out.println("Division = "+(a/b));
+        System.out.println("Modulus = "+(a%b));
+    }
+}
+
+#Practical 2.5
+code:- 
+import java.util.Scanner;
+
+public class Prac2_5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int s1, s2,s3, s4,s5, total;
+        double Perc;
+
+        System.out.print("Enter marks of 1st subject: ");
+        s1 = sc.nextInt();
+        System.out.print("Enter marks of 2nd subject: ");
+        s2 = sc.nextInt();
+        System.out.print("Enter marks of 3rd subject: ");
+        s3 = sc.nextInt();
+        System.out.print("Enter marks of 4th subject: ");
+        s4 = sc.nextInt();
+        System.out.print("Enter marks of 5th subject: ");
+        s5 = sc.nextInt();
+
+        total = s1+s2+s3+s4+s5;
+        System.out.println("Total marks = "+total);
+
+        Perc  = total/5.0;
+        System.out.println("Percentage = "+Perc);
+
+        if(Perc>= 80){
+            System.out.println("First division");
+        }
+        else if(Perc < 80 && Perc >= 60){
+            System.out.println("Second division");
+        }
+        else if(Perc < 60 && Perc >= 40){
+            System.out.println("Third division");
+        }
+        else 
+        System.out.println("Fail");
+    }
+}
+
+#Practical 3.1
+code:- 
+import java.util.Scanner;
+
+public class Prac3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int sum=0, count=0;
+        while(true){
+            System.out.print("Enter number: ");
+            int i = sc.nextInt();
+            if(i==999) break;
+            if(i%5==0) continue;
+            sum += i;
+            count++;
+
+        }
+        int avg = sum/count;
+        System.out.println("sum = "+sum+" Avg = "+avg);
+    }
+}
+
+#Practical 3.2
+code:- 
+import java.util.Scanner;
+public class Prac3_2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int start, end, sum=0, count=0;
+        System.out.print("Enter starting point: ");
+        start = sc.nextInt();
+        System.out.print("Enter ending point: ");
+        end = sc.nextInt();
+        for (int i = start; i <= end; i++) {
+            System.out.print(i+" ");
+            if(i%2==0){
+                sum+=i;
+                count++;
+            }
+        }
+        double avg = (double)sum/(double)count;
+
+        System.out.println("Sum = "+sum);
+        System.out.println("Average = "+avg);
+    }
+}
+
+#Practical 3.3
+code:- 
+import java.util.Scanner;
+
+public class Prac3_3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your basic salary: ");
+        int basic = sc.nextInt();
+        basic *= 12;
+        double gross = basic + (0.6 * (double) basic) + (0.25 * (double) basic);
+        System.out.print("Your gross salary: " + gross);
+
+        if (basic < 300000) {
+            System.out.println("You are not eligible to pay any tax");
+        } else if (basic >= 300000 && basic < 500000) {
+            System.out.println("your income tax = " + 0.1 * (double) basic);
+        } else if (basic >= 500000 && basic < 1000000) {
+            System.out.println("Your income tax = " + 0.15 * (double) basic);
+        } else if (basic > 1000000) {
+            System.out.println("Your income tax = " + 0.25 * (double) basic);
+        }
+    }
+}
+
+#Practical 4.1
+code:- 
+import java.util.Scanner;
+public class Prac4_1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter month number: ");
+        int n = sc.nextInt();
+        switch (n) {
+            case 1:
+                System.out.println("January");
+                break;
+            case 2:
+                System.out.println("January");
+                break;
+            case 3:
+                System.out.println("January");
+                break;
+            case 4:
+                System.out.println("January");
+                break;
+            case 5:
+                System.out.println("January");
+                break;
+            case 6:
+                System.out.println("January");
+                break;
+            case 7:
+                System.out.println("January");
+                break;
+            case 8:
+                System.out.println("January");
+                break;
+            case 9:
+                System.out.println("January");
+                break;
+            case 10:
+                System.out.println("January");
+                break;
+            case 11:
+                System.out.println("January");
+                break;
+            case 12:
+                System.out.println("January");
+                break;
+        
+            default:
+            System.out.println("Invalid input");
+                break;
+        }
+    }
+}
+
+#Practical 4.2
+code:- 
+import java.util.Scanner;
+
+public class Prac4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int A[][] = new int[3][3];
+        int B[][] = new int[3][3];
+        int C[][] = new int[3][3];
+        System.out.println("Enter value in matrix A");
+        for (int i = 0; i < A.length; i++) {
+            for (int j = 0; j < A[0].length; j++) {
+                A[i][j] = sc.nextInt();
+            }
+        }
+        System.out.println("Enter value in matrix B");
+        for (int i = 0; i < B.length; i++) {
+            for (int j = 0; j < B[0].length; j++) {
+                B[i][j] = sc.nextInt();
+            }
+        }
+        System.out.println("Multiplication of Matrix A and B: ");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                C[i][j] = 0;
+                for (int k = 0; k < 3; k++) {
+                    C[i][j] += A[i][k] * B[k][j];
+                }
+                System.out.print(C[i][j] + " ");
+            }
+        }
+    }
+}
+
+#Practical 4.3
+code:- 
+import java.util.Scanner;
+
+public class Prac4_3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter an alphabet: ");
+        String ch = sc.next();
+        switch (ch) {
+            case "a":
+                System.out.println("vowel");
+                break;
+            case "e":
+                System.out.println("vowel");
+                break;
+            case "i":
+                System.out.println("vowel");
+                break;
+            case "o":
+                System.out.println("vowel");
+                break;
+            case "u":
+                System.out.println("vowel");
+                break;
+            case "A":
+                System.out.println("vowel");
+                break;
+            case "E":
+                System.out.println("vowel");
+                break;
+            case "I":
+                System.out.println("vowel");
+                break;
+            case "O":
+                System.out.println("vowel");
+                break;
+            case "U":
+                System.out.println("vowel");
+                break;
+        
+            default:
+            System.out.println("Consonant");
+                break;
+        }
+    }
+}
+
+#Practical 4.4
+code:- 
+import java.util.Scanner;
+
+public class Prac4_4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int A[][] = new int[3][3];
+        int B[][] = new int[3][3];
+        int sum[][] = new int[3][3];
+        System.out.println("Enter value in matrix A");
+        for (int i = 0; i < A.length; i++) {
+            for (int j = 0; j < A[0].length; j++) {
+                A[i][j] = sc.nextInt();
+            }
+        }
+        System.out.println("Enter value in matrix B");
+        for (int i = 0; i < B.length; i++) {
+            for (int j = 0; j < B[0].length; j++) {
+                B[i][j] = sc.nextInt();
+            }
+        }
+        System.out.println("Addition of A and B matrix");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                sum[i][j] = A[i][j]+B[i][j];
+                System.out.print(sum[i][j]+" ");
+            }
+            System.out.println();
+        }
+        System.out.println("Transpose of sum matrix");
+        for (int i = 0; i < sum.length; i++) {
+            for (int j = 0; j < sum[0].length; j++) {
+                System.out.print(sum[j][i]+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+#Practical 5
+code:-
+
+
+
+
+
+
+
+#Practical 6
+code:- 
+
+
+
+
+
+#Practical 7
+code:-
+
+
+
+
+
+
+
+#Practical 8
+code:-
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Practical 9
+code:-
+import java.util.Scanner;
+
+public class Employee {
+    int emp_code;
+    double emp_salary;
+    String emp_name;
+
+    void getData() {
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter Employee name: ");
+            emp_name = sc.nextLine();
+            System.out.print("Enter Employee code: ");
+            emp_code = sc.nextInt();
+            System.out.print("Enter Employee salary: ");
+            emp_salary = sc.nextDouble();
+        }
+    }
+
+    void printData() {
+        if (emp_salary > 25000) {
+            System.out.println("Employee name: " + emp_name);
+            System.out.println("Employee code: " + emp_code);
+            System.out.println("Employee salary: " + emp_salary);
+        }
+    }
+
+    public static void main(String[] args) {
+        Employee[] e = new Employee[5];
+        for (int i = 0; i < 5; i++) {
+            e[i] = new Employee();
+            System.out.println("Enter record of " + (i + 1) + " employee");
+            e[i].getData();
+        }
+        System.out.println("\nEmployee having more than 25000 salary\n");
+        for (int i = 0; i < 5; i++) {
+            e[i].printData();
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Practical 10
+code:-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Practical 11
+code:-
+import java.util.Scanner;
+public class Person{
+    private String name;
+    private int age;
+    private String address;
+
+    Person(String name, int age, String address){
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
+
+    protected void finalize() {
+        System.out.println("Object has been destroyed");
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter detail for 1st person");
+        System.out.print("Enter name: ");
+        String Name = sc.nextLine();
+        System.out.print("Enter age: ");
+        int Age = sc.nextInt();
+        sc.nextLine();
+        System.out.print("Enter Address: ");
+        String Address = sc.nextLine();
+
+        Person p1 = new Person(Name,Age,Address);
+
+        System.out.println("Enter detail for 2nd person");
+        System.out.print("Enter name: ");
+        String Name2 = sc.nextLine();
+        System.out.print("Enter age: ");
+        int Age2 = sc.nextInt();
+        sc.nextLine();
+        System.out.print("Enter Address: ");
+        String Address2 = sc.nextLine();
+
+        Person p2 = new Person(Name2,Age2,Address2);
+
+        p1 = null;
+        p2 = null;
+        System.gc();
+        sc.close();
+    }
+}
+
+#Practical 12
+code:-
+public class Myclass {
+    private int count;
+    Myclass(int count){
+        this.count = count;
+    }
+    protected void finalize() {
+        System.out.println(--count);
+    }
+    public static void main(String[] args) {
+        Myclass m1 = new Myclass(1);
+        Myclass m2 = new Myclass(10);
+        m1 = null;
+        m2 = null;
+        System.gc();
+    }
+}
+
+#Practical 13
+code:-
+public class Person_Prac13 {
+	String name;
+	int id;
+
+	Person_Prac13(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+
+	public void printData() {
+		int count = 1;
+		System.out.println("Employee " + count + " id: " + id);
+		System.out.println("Employee " + count + " name: " + name);
+		count++;
+	}
+
+	public static void main(String[] args) {
+		Person_Prac13 obj1 = new Person_Prac13(101, "Asif");
+		Person_Prac13 obj2 = new Person_Prac13(102, "Dharmil");
+		obj1.printData();
+		obj2.printData();
+	}
+}
+
+#Practical 14
+code:-
+
+
+
+
+
+
+
+
+
+
+
+
+#Practical 15A
+code:-
+abstract class Shape {
+    protected int x1 = 10, x2 = 100;
+    protected int y1 = 20, y2 = 200;
+
+    abstract void show();
+}
+
+class Line extends Shape {
+    void show() {
+        System.out.println("Line is represented as (" + x1 + "," + x2 + "), (" + y1 + "," + y2 + ")");
+    }
+}
+
+class Circle extends Shape {
+    void show() {
+        System.out.println("Center and radius of circle is represented as (" + x1 + "," + y1 + ") and (" + x1 + "," + y1
+                + ") (" + x2 + "," + y2 + ")");
+    }
+}
+
+class Rectangle extends Shape {
+    void show() {
+        System.out
+                .println("First and Second  diagonal of rectangle is represented as (" + x1 + "," + y1 + ")(" + x2 + ","
+                        + y2 + ") and (" + x1 + "," + x2 + ") (" + y2 + "," + y1 + ")");
+    }
+}
+
+public class Exp15a {
+    public static void main(String[] args) {
+        Line l = new Line();
+        Circle c = new Circle();
+        Rectangle r = new Rectangle();
+        l.show();
+        c.show();
+        r.show();
+    }
+
+}
+
+#Practical 15B
+code:-
+class Bank {
+    double RI = 5.0;
+
+    double getRateOfInterest() {
+        return this.RI;
+    }
+}
+
+class SBI extends Bank {
+    double RI = 8.0;
+
+    double getRateOfInterest() {
+        return this.RI;
+    }
+}
+
+class AXIS extends Bank {
+    double RI = 9.0;
+
+    double getRateOfInterest() {
+        return this.RI;
+    }
+}
+
+class ICICI extends Bank {
+    double RI = 7.0;
+
+    double getRateOfInterest() {
+        return this.RI;
+    }
+}
+
+public class Exp15b {
+    public static void main(String[] args) {
+        SBI s = new SBI();
+        AXIS a = new AXIS();
+        ICICI i = new ICICI();
+        System.out.println("SBI rate of interest: " + s.getRateOfInterest());
+        System.out.println("AXIS rate of interest: " + a.getRateOfInterest());
+        System.out.println("ICICI rate of interest: " + i.getRateOfInterest());
+    }
+}
+
+#Practical 16A
+code:-
+abstract class Vehicle {
+    abstract void engine();
+}
+
+class Car extends Vehicle {
+    void engine() {
+        System.out.println("Car has good engine");
+    }
+}
+
+class Truck extends Vehicle {
+    void engine() {
+        System.out.println("Truck has bad engine");
+    }
+}
+
+public class Exp16a {
+    public static void main(String[] args) {
+        Car c = new Car();
+        Truck t = new Truck();
+        c.engine();
+        t.engine();
+    }
+}
+
+#Practical 16B
+code:- 
+class Vehicle {
+    public void drive() {
+        System.out.println("Driving the vehicle");
+    }
+}
+
+class Car extends Vehicle {
+    @Override
+    public void drive() {
+        System.out.println("Driving the Car");
+    }
+}
+
+public class Exp16b {
+    public static void main(String[] args) {
+        Vehicle v = new Vehicle();
+        Car c = new Car();
+        v.drive();
+        c.drive();
+    }
+}
+
+#Practical 17
+code:-
+import java.util.Scanner;
+interface Polygon{
+    void getArea();
+}
+class Rectangle implements Polygon{
+    public void getArea(){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter length: ");
+        int l = sc.nextInt();
+        System.out.print("Enter width: ");
+        int b = sc.nextInt();
+        int Area = l*b;
+        System.out.println("Area of rectangle: "+Area);
+        sc.close();
+    }
+}
+public class Prac17{
+    public static void main(String[] args) {
+        Rectangle r = new Rectangle();
+        r.getArea();
+    }
+}
+
+#Practical 18
+code:-
+import java.util.Scanner;
+
+interface polygon {
+    abstract void getVolume();
+}
+
+class Rectangle implements polygon {
+    Scanner sc = new Scanner(System.in);
+
+    @Override
+    public void getVolume() {
+        System.out.print("Enter length: ");
+        int l = sc.nextInt();
+
+        System.out.print("Enter width: ");
+        int b = sc.nextInt();
+
+        System.out.print("Enter height: ");
+        int h = sc.nextInt();
+
+        int vol = l * b * h;
+        System.out.println("Volume: " + vol);
+
+    }
+}
+
+public class Prac18 {
+    public static void main(String[] args) {
+        Rectangle r = new Rectangle();
+        r.getVolume();
+    }
+}
+
+#Practical 19
+code:-
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Practical 20
+code:-
+public class Prac20 {
+    public static void main(String[] args) throws Exception {
+        for (int i = 1000; i > 0; i--) {
+            try {
+                System.out.println(i / (int) (Math.random() * 100) + " ");
+            } catch (ArithmeticException e) {
+                System.out.println("Arithmetic exception at iteration " + (1000 - i + 1));
+                break;
+            }
+        }
+    }
+}
+
+#Practical 21
+code:-
+class Thread1 extends Thread {
+    public void run() {
+        
+            for(int i=0; i<50; i++){
+                try{
+                    System.out.println("Good morning");
+                    Thread.sleep(1000);
+                } catch (Exception e) {
+                    System.out.println(e);
+                }
+                }
+    }
+}
+
+class Thread2 extends Thread {
+    public void run() {
+        for(int i=0; i<50; i++){
+            try{
+                System.out.println("Hello");
+                Thread.sleep(2000);
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+            }
+    }
+}
+
+class Thread3 extends Thread {
+    public void run() {
+        for(int i=0; i<50; i++){
+            try{
+                System.out.println("Welcome");
+                Thread.sleep(3000);
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+            }
+    }
+}
+
+public class Prac21 {
+    public static void main(String[] args) {
+        Thread1 t1 = new Thread1();
+        Thread2 t2 = new Thread2();
+        Thread3 t3 = new Thread3();
+        t1.start();
+        t2.start();
+        t3.start();
+    }
+}
+
+#Practical 22
+code:-
+class Thread1 extends Thread {
+    public void run() {
+        
+            for(int i=0; i<50; i++){
+                try{
+                    System.out.println("Hi");
+                    Thread.sleep(1000);
+                } catch (Exception e) {
+                    System.out.println(e);
+                }
+                }
+    }
+}
+
+class Thread2 extends Thread {
+    public void run() {
+        for(int i=0; i<50; i++){
+            try{
+                System.out.println("Hello");
+                Thread.sleep(2000);
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+            }
+    }
+}
+
+class Thread3 extends Thread {
+    public void run() {
+        for(int i=0; i<50; i++){
+            try{
+                System.out.println("How are you");
+                Thread.sleep(3000);
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+            }
+    }
+}
+
+public class Prac22 {
+    public static void main(String[] args) {
+        Thread1 t1 = new Thread1();
+        Thread2 t2 = new Thread2();
+        Thread3 t3 = new Thread3();
+        t1.start();
+        t2.start();
+        t3.start();
+    }
+}
+
+#Practical 23
+code:-
+import java.io.*;
+public class Prac23 {
+    public static void main(String[] asif) throws IOException{
+        FileInputStream in = new FileInputStream(asif[0]);
+        int size = in.available();
+        char c;
+        for(int i=0; i<size; i++){
+            c = (char)in.read();
+            System.out.print(Character.toLowerCase(c));
+        }
+        in.close();
+    }
+}
+
+#Practical 24
+code:-
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.*;
+public class Prac24 {
+    public static void main(String[] args) throws IOException{
+        FileInputStream in = new FileInputStream(args[0]);
+        int size = in.available();
+        int words=0;
+        Scanner sc = new Scanner(in);
+        while (sc.hasNext()) {
+            sc.next();
+            words++;
+        }
+        System.out.println("Size of file are: "+size);
+        System.out.println("Total number of words: "+words);
+        sc.close();
+    }
+}
+
+#Practical 25
+code:-
+import java.util.*;
+public class Prac25 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Integer> ar = new ArrayList<>();
+        System.out.print("Enter five number: ");
+        for (int i = 0; i < 5; i++) {
+            ar.add(sc.nextInt());
+        }
+
+        ar.remove(3);
+        
+        for (Integer integer : ar) {
+            System.out.println(integer);
+        }
+    }
+}
+
+#Practical 26
+code:-
+import java.util.*;
+public class Prac26 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Vector v = new Vector();
+        System.out.print("Enter a number in vector: ");
+        v.add(sc.nextInt());
+        System.out.print("Enter a word in vector: ");
+        v.add(sc.next());
+        System.out.print("Enter another number in vector: ");
+        v.add(sc.nextInt());
+        System.out.print("Enter another word in vector: ");
+        v.add(sc.next());
+
+        System.out.println(v);
+        System.out.println("After deleting an element from vector");
+        v.remove(2);
+        System.out.println(v);
+    }
+}
+
+#Practical 27
+code:-
+import java.util.*;
+public class Prac27 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Stack s = new Stack();
+        System.out.print("Add a number in stack: ");
+        s.push(sc.nextInt());
+        System.out.print("Add a word in stack: ");
+        s.push(sc.next());
+        System.out.print("Add another number in stack: ");
+        s.push(sc.nextInt());
+        System.out.print("Add another word in stack: ");
+        s.push(sc.next());
+        System.out.println(s);
+        System.out.println("Peek element of stack: "+s.peek());
+        System.out.println("After removing peek element");
+        s.pop();
+        System.out.println("New peek element"+s.peek());
+        System.out.println(s);
+    }
+}
+
+#Practical 28
+code:-
+import java.util.*;
+public class Prac28 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Map<String, String> m = new LinkedHashMap<>();
+        m.put("111", "Asif");
+        m.put("222", "Dharmil");
+        m.put("333", "Udit");
+        m.put("444", "Kamesh");
+        System.out.println(m);
+        System.out.println(m.get("111"));
+        m.clear();
+        System.out.println("Size: "+m.size());
+    }
+}
