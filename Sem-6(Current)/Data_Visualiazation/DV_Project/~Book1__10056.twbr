@@ -1,0 +1,2867 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1211.0901                               -->
+<workbook original-version='18.1' source-build='2024.3.2 (20243.24.1211.0901)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ipl_match_ball_by_ball_data' inline='true' name='federated.1gkiicz0c3m0xf12gzta81uq73lj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ipl_match_ball_by_ball_data' name='textscan.0s1y3m3056shoo0zjam1u1irapof'>
+            <connection class='textscan' directory='C:/Users/safet/Downloads/archive (5)' filename='ipl_match_ball_by_ball_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.0s1y3m3056shoo0zjam1u1irapof' name='ipl_match_info_data.csv' table='[ipl_match_info_data#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='match_id' ordinal='0' />
+              <column datatype='string' name='season' ordinal='1' />
+              <column datatype='date' name='date' ordinal='2' />
+              <column datatype='string' name='city' ordinal='3' />
+              <column datatype='string' name='venue' ordinal='4' />
+              <column datatype='string' name='team1' ordinal='5' />
+              <column datatype='string' name='team2' ordinal='6' />
+              <column datatype='string' name='toss_winner' ordinal='7' />
+              <column datatype='string' name='toss_decision' ordinal='8' />
+              <column datatype='string' name='player_of_match' ordinal='9' />
+              <column datatype='string' name='winner' ordinal='10' />
+              <column datatype='integer' name='winner_wickets' ordinal='11' />
+              <column datatype='integer' name='winner_runs' ordinal='12' />
+              <column datatype='string' name='outcome' ordinal='13' />
+              <column datatype='string' name='result_type' ordinal='14' />
+              <column datatype='integer' name='results' ordinal='15' />
+              <column datatype='string' name='gender' ordinal='16' />
+              <column datatype='string' name='event' ordinal='17' />
+              <column datatype='integer' name='match_number' ordinal='18' />
+              <column datatype='string' name='umpire1' ordinal='19' />
+              <column datatype='string' name='umpire2' ordinal='20' />
+              <column datatype='string' name='reserve_umpire' ordinal='21' />
+              <column datatype='string' name='tv_umpire' ordinal='22' />
+              <column datatype='string' name='match_referee' ordinal='23' />
+              <column datatype='string' name='eliminator' ordinal='24' />
+              <column datatype='string' name='method' ordinal='25' />
+              <column datatype='date' name='date_1' ordinal='26' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0s1y3m3056shoo0zjam1u1irapof' name='ipl_match_ball_by_ball_data.csv' table='[ipl_match_ball_by_ball_data#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='match_id' ordinal='0' />
+              <column datatype='string' name='season' ordinal='1' />
+              <column datatype='date' name='start_date' ordinal='2' />
+              <column datatype='string' name='venue' ordinal='3' />
+              <column datatype='integer' name='innings' ordinal='4' />
+              <column datatype='real' name='ball' ordinal='5' />
+              <column datatype='string' name='batting_team' ordinal='6' />
+              <column datatype='string' name='bowling_team' ordinal='7' />
+              <column datatype='string' name='striker' ordinal='8' />
+              <column datatype='string' name='non_striker' ordinal='9' />
+              <column datatype='string' name='bowler' ordinal='10' />
+              <column datatype='integer' name='runs_off_bat' ordinal='11' />
+              <column datatype='integer' name='extras' ordinal='12' />
+              <column datatype='integer' name='wides' ordinal='13' />
+              <column datatype='integer' name='noballs' ordinal='14' />
+              <column datatype='integer' name='byes' ordinal='15' />
+              <column datatype='integer' name='legbyes' ordinal='16' />
+              <column datatype='string' name='penalty' ordinal='17' />
+              <column datatype='string' name='wicket_type' ordinal='18' />
+              <column datatype='string' name='player_dismissed' ordinal='19' />
+              <column datatype='string' name='other_wicket_type' ordinal='20' />
+              <column datatype='string' name='other_player_dismissed' ordinal='21' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[ball]' value='[ipl_match_ball_by_ball_data.csv].[ball]' />
+          <map key='[batting_team]' value='[ipl_match_ball_by_ball_data.csv].[batting_team]' />
+          <map key='[bowler]' value='[ipl_match_ball_by_ball_data.csv].[bowler]' />
+          <map key='[bowling_team]' value='[ipl_match_ball_by_ball_data.csv].[bowling_team]' />
+          <map key='[byes]' value='[ipl_match_ball_by_ball_data.csv].[byes]' />
+          <map key='[city]' value='[ipl_match_info_data.csv].[city]' />
+          <map key='[date]' value='[ipl_match_info_data.csv].[date]' />
+          <map key='[date_1]' value='[ipl_match_info_data.csv].[date_1]' />
+          <map key='[eliminator]' value='[ipl_match_info_data.csv].[eliminator]' />
+          <map key='[event]' value='[ipl_match_info_data.csv].[event]' />
+          <map key='[extras]' value='[ipl_match_ball_by_ball_data.csv].[extras]' />
+          <map key='[gender]' value='[ipl_match_info_data.csv].[gender]' />
+          <map key='[innings]' value='[ipl_match_ball_by_ball_data.csv].[innings]' />
+          <map key='[legbyes]' value='[ipl_match_ball_by_ball_data.csv].[legbyes]' />
+          <map key='[match_id (ipl_match_ball_by_ball_data.csv)]' value='[ipl_match_ball_by_ball_data.csv].[match_id]' />
+          <map key='[match_id]' value='[ipl_match_info_data.csv].[match_id]' />
+          <map key='[match_number]' value='[ipl_match_info_data.csv].[match_number]' />
+          <map key='[match_referee]' value='[ipl_match_info_data.csv].[match_referee]' />
+          <map key='[method]' value='[ipl_match_info_data.csv].[method]' />
+          <map key='[noballs]' value='[ipl_match_ball_by_ball_data.csv].[noballs]' />
+          <map key='[non_striker]' value='[ipl_match_ball_by_ball_data.csv].[non_striker]' />
+          <map key='[other_player_dismissed]' value='[ipl_match_ball_by_ball_data.csv].[other_player_dismissed]' />
+          <map key='[other_wicket_type]' value='[ipl_match_ball_by_ball_data.csv].[other_wicket_type]' />
+          <map key='[outcome]' value='[ipl_match_info_data.csv].[outcome]' />
+          <map key='[penalty]' value='[ipl_match_ball_by_ball_data.csv].[penalty]' />
+          <map key='[player_dismissed]' value='[ipl_match_ball_by_ball_data.csv].[player_dismissed]' />
+          <map key='[player_of_match]' value='[ipl_match_info_data.csv].[player_of_match]' />
+          <map key='[reserve_umpire]' value='[ipl_match_info_data.csv].[reserve_umpire]' />
+          <map key='[result_type]' value='[ipl_match_info_data.csv].[result_type]' />
+          <map key='[results]' value='[ipl_match_info_data.csv].[results]' />
+          <map key='[runs_off_bat]' value='[ipl_match_ball_by_ball_data.csv].[runs_off_bat]' />
+          <map key='[season (ipl_match_ball_by_ball_data.csv)]' value='[ipl_match_ball_by_ball_data.csv].[season]' />
+          <map key='[season]' value='[ipl_match_info_data.csv].[season]' />
+          <map key='[start_date]' value='[ipl_match_ball_by_ball_data.csv].[start_date]' />
+          <map key='[striker]' value='[ipl_match_ball_by_ball_data.csv].[striker]' />
+          <map key='[team1]' value='[ipl_match_info_data.csv].[team1]' />
+          <map key='[team2]' value='[ipl_match_info_data.csv].[team2]' />
+          <map key='[toss_decision]' value='[ipl_match_info_data.csv].[toss_decision]' />
+          <map key='[toss_winner]' value='[ipl_match_info_data.csv].[toss_winner]' />
+          <map key='[tv_umpire]' value='[ipl_match_info_data.csv].[tv_umpire]' />
+          <map key='[umpire1]' value='[ipl_match_info_data.csv].[umpire1]' />
+          <map key='[umpire2]' value='[ipl_match_info_data.csv].[umpire2]' />
+          <map key='[venue (ipl_match_ball_by_ball_data.csv)]' value='[ipl_match_ball_by_ball_data.csv].[venue]' />
+          <map key='[venue]' value='[ipl_match_info_data.csv].[venue]' />
+          <map key='[wicket_type]' value='[ipl_match_ball_by_ball_data.csv].[wicket_type]' />
+          <map key='[wides]' value='[ipl_match_ball_by_ball_data.csv].[wides]' />
+          <map key='[winner]' value='[ipl_match_info_data.csv].[winner]' />
+          <map key='[winner_runs]' value='[ipl_match_info_data.csv].[winner_runs]' />
+          <map key='[winner_wickets]' value='[ipl_match_info_data.csv].[winner_wickets]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>match_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[match_id]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>match_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[season]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>venue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[venue]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>venue</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team1]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>team1</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team2]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>team2</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>toss_winner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[toss_winner]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>toss_winner</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>toss_decision</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[toss_decision]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>toss_decision</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_of_match</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player_of_match]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>player_of_match</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winner]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>winner</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winner_wickets</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[winner_wickets]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>winner_wickets</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winner_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[winner_runs]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>winner_runs</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>outcome</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[outcome]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>outcome</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>result_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[result_type]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>result_type</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>results</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[results]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>results</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>event</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[event]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>event</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>match_number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[match_number]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>match_number</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>umpire1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[umpire1]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>umpire1</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>umpire2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[umpire2]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>umpire2</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reserve_umpire</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reserve_umpire]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>reserve_umpire</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tv_umpire</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tv_umpire]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>tv_umpire</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>match_referee</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[match_referee]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>match_referee</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eliminator</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[eliminator]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>eliminator</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>method</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[method]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>method</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_1</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date_1]</local-name>
+            <parent-name>[ipl_match_info_data.csv]</parent-name>
+            <remote-alias>date_1</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>match_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[match_id (ipl_match_ball_by_ball_data.csv)]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>match_id</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[season (ipl_match_ball_by_ball_data.csv)]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[start_date]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>start_date</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>venue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[venue (ipl_match_ball_by_ball_data.csv)]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>venue</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>innings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[innings]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>innings</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ball</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ball]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>ball</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batting_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[batting_team]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>batting_team</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bowling_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bowling_team]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>bowling_team</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>striker</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[striker]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>striker</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>non_striker</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[non_striker]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>non_striker</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bowler</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bowler]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>bowler</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runs_off_bat</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[runs_off_bat]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>runs_off_bat</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extras</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[extras]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>extras</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wides</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wides]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>wides</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>noballs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[noballs]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>noballs</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>byes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[byes]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>byes</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>legbyes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[legbyes]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>legbyes</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>penalty</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[penalty]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>penalty</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wicket_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[wicket_type]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>wicket_type</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_dismissed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player_dismissed]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>player_dismissed</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>other_wicket_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[other_wicket_type]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>other_wicket_type</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>other_player_dismissed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[other_player_dismissed]</local-name>
+            <parent-name>[ipl_match_ball_by_ball_data.csv]</parent-name>
+            <remote-alias>other_player_dismissed</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='INDEX' datatype='integer' name='[Calculation_1089308200261566464]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='INDEX()'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column aggregation='Sum' caption='Runs Off Bat (copy)' datatype='integer' name='[Runs Off Bat (copy)_1089308200272740353]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='[runs_off_bat]' />
+      </column>
+      <column caption='ipl_match_ball_by_ball_data.csv' datatype='table' name='[__tableau_internal_object_id__].[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]' role='measure' type='quantitative' />
+      <column caption='ipl_match_info_data.csv' datatype='table' name='[__tableau_internal_object_id__].[ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95]' role='measure' type='quantitative' />
+      <column caption='Ball' datatype='real' name='[ball]' role='measure' type='quantitative' />
+      <column caption='Batting Team' datatype='string' name='[batting_team]' role='dimension' semantic-role='' type='nominal' />
+      <column caption='Bowler' datatype='string' name='[bowler]' role='dimension' type='nominal' />
+      <column caption='Bowling Team' datatype='string' name='[bowling_team]' role='dimension' type='nominal' />
+      <column caption='Byes' datatype='integer' name='[byes]' role='measure' type='quantitative' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Date 1' datatype='date' name='[date_1]' role='dimension' type='ordinal' />
+      <column caption='Eliminator' datatype='string' name='[eliminator]' role='dimension' type='nominal' />
+      <column caption='Event' datatype='string' name='[event]' role='dimension' type='nominal' />
+      <column caption='Extras' datatype='integer' name='[extras]' role='measure' type='quantitative' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Innings' datatype='integer' name='[innings]' role='measure' type='quantitative' />
+      <column caption='Legbyes' datatype='integer' name='[legbyes]' role='measure' type='quantitative' />
+      <column caption='Match Id (Ipl Match Ball By Ball Data.Csv)' datatype='integer' name='[match_id (ipl_match_ball_by_ball_data.csv)]' role='dimension' type='ordinal' />
+      <column caption='Match Id' datatype='integer' name='[match_id]' role='dimension' type='ordinal' />
+      <column caption='Match Number' datatype='integer' name='[match_number]' role='dimension' type='ordinal' />
+      <column caption='Match Referee' datatype='string' name='[match_referee]' role='dimension' type='nominal' />
+      <column caption='Method' datatype='string' name='[method]' role='dimension' type='nominal' />
+      <column caption='Noballs' datatype='integer' name='[noballs]' role='measure' type='quantitative' />
+      <column caption='Non Striker' datatype='string' name='[non_striker]' role='dimension' type='nominal' />
+      <column caption='Other Player Dismissed' datatype='string' name='[other_player_dismissed]' role='dimension' type='nominal' />
+      <column caption='Other Wicket Type' datatype='string' name='[other_wicket_type]' role='dimension' type='nominal' />
+      <column caption='Outcome' datatype='string' name='[outcome]' role='dimension' type='nominal' />
+      <column caption='Penalty' datatype='string' name='[penalty]' role='dimension' type='nominal' />
+      <column caption='Player Dismissed' datatype='string' name='[player_dismissed]' role='dimension' type='nominal' />
+      <column caption='Player Of Match' datatype='string' name='[player_of_match]' role='dimension' type='nominal' />
+      <column caption='Reserve Umpire' datatype='string' name='[reserve_umpire]' role='dimension' type='nominal' />
+      <column caption='Result Type' datatype='string' name='[result_type]' role='dimension' type='nominal' />
+      <column caption='Results' datatype='integer' name='[results]' role='measure' type='quantitative' />
+      <column caption='Runs Off Bat' datatype='integer' name='[runs_off_bat]' role='measure' type='quantitative' />
+      <column caption='Season (Ipl Match Ball By Ball Data.Csv)' datatype='string' name='[season (ipl_match_ball_by_ball_data.csv)]' role='dimension' type='nominal' />
+      <column caption='Season' datatype='string' name='[season]' role='dimension' type='nominal' />
+      <column caption='Start Date' datatype='date' name='[start_date]' role='dimension' type='ordinal' />
+      <column caption='Striker' datatype='string' name='[striker]' role='dimension' type='nominal' />
+      <column caption='Team1' datatype='string' name='[team1]' role='dimension' type='nominal' />
+      <column caption='Team2' datatype='string' name='[team2]' role='dimension' type='nominal' />
+      <column caption='Toss Decision' datatype='string' name='[toss_decision]' role='dimension' type='nominal' />
+      <column caption='Toss Winner' datatype='string' name='[toss_winner]' role='dimension' type='nominal' />
+      <column caption='Tv Umpire' datatype='string' name='[tv_umpire]' role='dimension' type='nominal' />
+      <column caption='Umpire1' datatype='string' name='[umpire1]' role='dimension' type='nominal' />
+      <column caption='Umpire2' datatype='string' name='[umpire2]' role='dimension' type='nominal' />
+      <column caption='Venue (Ipl Match Ball By Ball Data.Csv)' datatype='string' name='[venue (ipl_match_ball_by_ball_data.csv)]' role='dimension' type='nominal' />
+      <column caption='Venue' datatype='string' name='[venue]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      <column caption='Wicket Type' datatype='string' name='[wicket_type]' role='dimension' type='nominal' />
+      <column caption='Wides' datatype='integer' name='[wides]' role='measure' type='quantitative' />
+      <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+      <column caption='Winner Runs' datatype='integer' name='[winner_runs]' role='measure' type='quantitative' />
+      <column caption='Winner Wickets' datatype='integer' name='[winner_wickets]' role='measure' type='quantitative' />
+      <column-instance column='[winner]' derivation='None' name='[none:winner:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:winner:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Kolkata Knight Riders&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Chennai Super Kings&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Gujarat Lions&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Punjab Kings&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Lucknow Super Giants&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Gujarat Titans&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Deccan Chargers&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Royal Challengers Bangalore&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Kings XI Punjab&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Rajasthan Royals&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Rising Pune Supergiant&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Sunrisers Hyderabad&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mumbai Indians&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Kochi Tuskers Kerala&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Delhi Capitals&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Rising Pune Supergiants&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Pune Warriors&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Delhi Daredevils&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[City].[Name]' value='%null%' />
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='ipl_match_ball_by_ball_data.csv' id='ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68'>
+            <properties context=''>
+              <relation connection='textscan.0s1y3m3056shoo0zjam1u1irapof' name='ipl_match_ball_by_ball_data.csv' table='[ipl_match_ball_by_ball_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='match_id' ordinal='0' />
+                  <column datatype='string' name='season' ordinal='1' />
+                  <column datatype='date' name='start_date' ordinal='2' />
+                  <column datatype='string' name='venue' ordinal='3' />
+                  <column datatype='integer' name='innings' ordinal='4' />
+                  <column datatype='real' name='ball' ordinal='5' />
+                  <column datatype='string' name='batting_team' ordinal='6' />
+                  <column datatype='string' name='bowling_team' ordinal='7' />
+                  <column datatype='string' name='striker' ordinal='8' />
+                  <column datatype='string' name='non_striker' ordinal='9' />
+                  <column datatype='string' name='bowler' ordinal='10' />
+                  <column datatype='integer' name='runs_off_bat' ordinal='11' />
+                  <column datatype='integer' name='extras' ordinal='12' />
+                  <column datatype='integer' name='wides' ordinal='13' />
+                  <column datatype='integer' name='noballs' ordinal='14' />
+                  <column datatype='integer' name='byes' ordinal='15' />
+                  <column datatype='integer' name='legbyes' ordinal='16' />
+                  <column datatype='string' name='penalty' ordinal='17' />
+                  <column datatype='string' name='wicket_type' ordinal='18' />
+                  <column datatype='string' name='player_dismissed' ordinal='19' />
+                  <column datatype='string' name='other_wicket_type' ordinal='20' />
+                  <column datatype='string' name='other_player_dismissed' ordinal='21' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='ipl_match_info_data.csv' id='ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95'>
+            <properties context=''>
+              <relation connection='textscan.0s1y3m3056shoo0zjam1u1irapof' name='ipl_match_info_data.csv' table='[ipl_match_info_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='match_id' ordinal='0' />
+                  <column datatype='string' name='season' ordinal='1' />
+                  <column datatype='date' name='date' ordinal='2' />
+                  <column datatype='string' name='city' ordinal='3' />
+                  <column datatype='string' name='venue' ordinal='4' />
+                  <column datatype='string' name='team1' ordinal='5' />
+                  <column datatype='string' name='team2' ordinal='6' />
+                  <column datatype='string' name='toss_winner' ordinal='7' />
+                  <column datatype='string' name='toss_decision' ordinal='8' />
+                  <column datatype='string' name='player_of_match' ordinal='9' />
+                  <column datatype='string' name='winner' ordinal='10' />
+                  <column datatype='integer' name='winner_wickets' ordinal='11' />
+                  <column datatype='integer' name='winner_runs' ordinal='12' />
+                  <column datatype='string' name='outcome' ordinal='13' />
+                  <column datatype='string' name='result_type' ordinal='14' />
+                  <column datatype='integer' name='results' ordinal='15' />
+                  <column datatype='string' name='gender' ordinal='16' />
+                  <column datatype='string' name='event' ordinal='17' />
+                  <column datatype='integer' name='match_number' ordinal='18' />
+                  <column datatype='string' name='umpire1' ordinal='19' />
+                  <column datatype='string' name='umpire2' ordinal='20' />
+                  <column datatype='string' name='reserve_umpire' ordinal='21' />
+                  <column datatype='string' name='tv_umpire' ordinal='22' />
+                  <column datatype='string' name='match_referee' ordinal='23' />
+                  <column datatype='string' name='eliminator' ordinal='24' />
+                  <column datatype='string' name='method' ordinal='25' />
+                  <column datatype='date' name='date_1' ordinal='26' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[match_id]' />
+              <expression op='[match_id (ipl_match_ball_by_ball_data.csv)]' />
+            </expression>
+            <first-end-point object-id='ipl_match_info_data.csv_2EA02B4D878B4E7CBC85FACAAC80BC95' />
+            <second-end-point object-id='ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='MATCHES/CITIES'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Times New Roman' fontsize='20'>NUMBER OF MATCHES PLAYED IN EVERY CITY</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_match_ball_by_ball_data' name='federated.1gkiicz0c3m0xf12gzta81uq73lj' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1gkiicz0c3m0xf12gzta81uq73lj'>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[match_number]' derivation='Count' name='[cnt:match_number:qk]' pivot='key' type='quantitative' />
+            <column caption='Match Number' datatype='integer' name='[match_number]' role='dimension' type='ordinal' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[Latitude (generated)]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[Longitude (generated)]' included-values='non-null' />
+          <filter class='categorical' column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:city:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:city:nk]' />
+              <groupfilter function='member' level='[none:city:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:city:nk]</column>
+            <column>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[Latitude (generated)]</column>
+            <column>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[Longitude (generated)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[Longitude (generated)]' field-type='quantitative' max='11554552.834603041' min='5785871.9213455701' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[Latitude (generated)]' field-type='quantitative' max='4481569.9590768209' min='797193.5261277348' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' value='#1b1b1b' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:city:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:city:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:city:nk]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#898989' />
+            <format attr='font-size' value='12' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ddebf0' />
+            <format attr='color' value='#1b1b1b' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[cnt:match_number:qk]' />
+              <lod column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:city:nk]' />
+              <color column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[cnt:match_number:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[Latitude (generated)]</rows>
+        <cols>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{4B5C89DE-800B-42DB-8D32-55E81EC7AB69}' />
+    </worksheet>
+    <worksheet name='MATCHES/YEAR'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Times New Roman' fontsize='20'>NUMBER OF MATCHES PLAYED EVERY YEAR</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_match_ball_by_ball_data' name='federated.1gkiicz0c3m0xf12gzta81uq73lj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gkiicz0c3m0xf12gzta81uq73lj'>
+            <column-instance column='[match_number]' derivation='Count' name='[cnt:match_number:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Match Number' datatype='integer' name='[match_number]' role='dimension' type='ordinal' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <text column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[cnt:match_number:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[cnt:match_number:qk]</rows>
+        <cols>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[yr:date:ok]</cols>
+      </table>
+      <simple-id uuid='{DA959D91-920F-474D-9226-7814AB664749}' />
+    </worksheet>
+    <worksheet name='MOST FOURS'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Times New Roman' fontsize='20'>TOP 10 FOURS HITTERS </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_match_ball_by_ball_data' name='federated.1gkiicz0c3m0xf12gzta81uq73lj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gkiicz0c3m0xf12gzta81uq73lj'>
+            <column caption='INDEX' datatype='integer' name='[Calculation_1089308200261566464]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INDEX()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column aggregation='Sum' caption='Runs Off Bat (copy)' datatype='integer' name='[Runs Off Bat (copy)_1089308200272740353]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='[runs_off_bat]' />
+            </column>
+            <column-instance column='[__tableau_internal_object_id__].[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68:qk]' pivot='key' type='quantitative' />
+            <column caption='ipl_match_ball_by_ball_data.csv' datatype='table' name='[__tableau_internal_object_id__].[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]' role='measure' type='quantitative' />
+            <column-instance column='[Runs Off Bat (copy)_1089308200272740353]' derivation='None' name='[none:Runs Off Bat (copy)_1089308200272740353:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[striker]' derivation='None' name='[none:striker:nk]' pivot='key' type='nominal' />
+            <column caption='Runs Off Bat' datatype='integer' name='[runs_off_bat]' role='measure' type='quantitative' />
+            <column caption='Striker' datatype='string' name='[striker]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1089308200261566464]' derivation='User' name='[usr:Calculation_1089308200261566464:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:Runs Off Bat (copy)_1089308200272740353:ok]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([__tableau_internal_object_id__].[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68])' function='order' user:ui-marker='order'>
+                <groupfilter function='member' level='[none:Runs Off Bat (copy)_1089308200272740353:ok]' member='4' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:striker:nk]' direction='DESC' using='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[__tableau_internal_object_id__].[cnt:ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68:qk]' />
+          <filter class='quantitative' column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[usr:Calculation_1089308200261566464:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>10</max>
+          </filter>
+          <slices>
+            <column>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:Runs Off Bat (copy)_1089308200272740353:ok]</column>
+            <column>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[usr:Calculation_1089308200261566464:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:striker:nk]' value='50' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:striker:nk]' value='140' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[__tableau_internal_object_id__].[cnt:ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[__tableau_internal_object_id__].[cnt:ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68:qk]' />
+              <text column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[__tableau_internal_object_id__].[cnt:ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:Runs Off Bat (copy)_1089308200272740353:ok] / [federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:striker:nk])</rows>
+        <cols>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[__tableau_internal_object_id__].[cnt:ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68:qk]</cols>
+      </table>
+      <simple-id uuid='{E70F7A8B-E202-4D50-AABE-42A6C2E37587}' />
+    </worksheet>
+    <worksheet name='MOST POTM'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Times New Roman' fontsize='20'>MOST PLAYER OF THE MATCH</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_match_ball_by_ball_data' name='federated.1gkiicz0c3m0xf12gzta81uq73lj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gkiicz0c3m0xf12gzta81uq73lj'>
+            <column-instance column='[player_of_match]' derivation='Count' name='[cnt:player_of_match:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[winner]' derivation='Count' name='[cnt:winner:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[player_of_match]' derivation='None' name='[none:player_of_match:nk]' pivot='key' type='nominal' />
+            <column caption='Player Of Match' datatype='string' name='[player_of_match]' role='dimension' type='nominal' />
+            <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:player_of_match:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:player_of_match:nk]' />
+              <groupfilter function='member' level='[none:player_of_match:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:player_of_match:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[cnt:player_of_match:qk]' />
+              <color column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[cnt:winner:qk]' />
+              <text column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:player_of_match:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2EAD0DCA-50D0-4BD5-BC3F-E27B0843282D}' />
+    </worksheet>
+    <worksheet name='MOST RUNS'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Times New Roman' fontsize='20'>TOP 10 RUNS SCORER IN IPL</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_match_ball_by_ball_data' name='federated.1gkiicz0c3m0xf12gzta81uq73lj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gkiicz0c3m0xf12gzta81uq73lj'>
+            <column caption='INDEX' datatype='integer' name='[Calculation_1089308200261566464]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INDEX()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column-instance column='[striker]' derivation='None' name='[none:striker:nk]' pivot='key' type='nominal' />
+            <column caption='Runs Off Bat' datatype='integer' name='[runs_off_bat]' role='measure' type='quantitative' />
+            <column caption='Striker' datatype='string' name='[striker]' role='dimension' type='nominal' />
+            <column-instance column='[runs_off_bat]' derivation='Sum' name='[sum:runs_off_bat:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1089308200261566464]' derivation='User' name='[usr:Calculation_1089308200261566464:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+          </datasource-dependencies>
+          <computed-sort column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:striker:nk]' direction='DESC' using='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[sum:runs_off_bat:qk]' />
+          <filter class='quantitative' column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[usr:Calculation_1089308200261566464:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>10</max>
+          </filter>
+          <slices>
+            <column>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[usr:Calculation_1089308200261566464:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='187' />
+            <format attr='height' field='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:striker:nk]' value='56' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:striker:nk]' value='156' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[sum:runs_off_bat:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:striker:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{D9FFE860-8683-460F-B461-F9EB39D89AE1}' />
+    </worksheet>
+    <worksheet name='MOST SIXES'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Times New Roman' fontsize='20'>TOP 10 SIX HITTERS </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_match_ball_by_ball_data' name='federated.1gkiicz0c3m0xf12gzta81uq73lj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gkiicz0c3m0xf12gzta81uq73lj'>
+            <column caption='INDEX' datatype='integer' name='[Calculation_1089308200261566464]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INDEX()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column aggregation='Sum' caption='Runs Off Bat (copy)' datatype='integer' name='[Runs Off Bat (copy)_1089308200272740353]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='[runs_off_bat]' />
+            </column>
+            <column-instance column='[__tableau_internal_object_id__].[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68:qk]' pivot='key' type='quantitative' />
+            <column caption='ipl_match_ball_by_ball_data.csv' datatype='table' name='[__tableau_internal_object_id__].[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68]' role='measure' type='quantitative' />
+            <column-instance column='[Runs Off Bat (copy)_1089308200272740353]' derivation='None' name='[none:Runs Off Bat (copy)_1089308200272740353:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[striker]' derivation='None' name='[none:striker:nk]' pivot='key' type='nominal' />
+            <column caption='Runs Off Bat' datatype='integer' name='[runs_off_bat]' role='measure' type='quantitative' />
+            <column caption='Striker' datatype='string' name='[striker]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1089308200261566464]' derivation='User' name='[usr:Calculation_1089308200261566464:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:Runs Off Bat (copy)_1089308200272740353:ok]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([__tableau_internal_object_id__].[ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68])' function='order' user:ui-marker='order'>
+                <groupfilter function='member' level='[none:Runs Off Bat (copy)_1089308200272740353:ok]' member='6' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:striker:nk]' direction='DESC' using='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[__tableau_internal_object_id__].[cnt:ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68:qk]' />
+          <filter class='quantitative' column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[usr:Calculation_1089308200261566464:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>10</max>
+          </filter>
+          <slices>
+            <column>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:Runs Off Bat (copy)_1089308200272740353:ok]</column>
+            <column>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[usr:Calculation_1089308200261566464:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:striker:nk]' value='50' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:striker:nk]' value='140' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[__tableau_internal_object_id__].[cnt:ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[__tableau_internal_object_id__].[cnt:ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68:qk]' />
+              <text column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[__tableau_internal_object_id__].[cnt:ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:Runs Off Bat (copy)_1089308200272740353:ok] / [federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:striker:nk])</rows>
+        <cols>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[__tableau_internal_object_id__].[cnt:ipl_match_ball_by_ball_data.csv_EA7E0D882DD7471B9564B6B5DF72BF68:qk]</cols>
+      </table>
+      <simple-id uuid='{07135C8D-E2A8-4F2C-B3E3-991A6FA03175}' />
+    </worksheet>
+    <worksheet name='MOST WICKETS'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Times New Roman' fontsize='20'>TOP 10 WICKET TAKERS IN IPL</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_match_ball_by_ball_data' name='federated.1gkiicz0c3m0xf12gzta81uq73lj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gkiicz0c3m0xf12gzta81uq73lj'>
+            <column caption='INDEX' datatype='integer' name='[Calculation_1089308200261566464]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='INDEX()'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Bowler' datatype='string' name='[bowler]' role='dimension' type='nominal' />
+            <column-instance column='[wicket_type]' derivation='Count' name='[cnt:wicket_type:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[bowler]' derivation='None' name='[none:bowler:nk]' pivot='key' type='nominal' />
+            <column-instance column='[wicket_type]' derivation='None' name='[none:wicket_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1089308200261566464]' derivation='User' name='[usr:Calculation_1089308200261566464:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+            <column caption='Wicket Type' datatype='string' name='[wicket_type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:bowler:nk]' direction='DESC' using='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[cnt:wicket_type:qk]' />
+          <filter class='categorical' column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:wicket_type:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:wicket_type:nk]' member='%null%' />
+              <groupfilter function='member' level='[none:wicket_type:nk]' member='&quot;bowled&quot;' />
+              <groupfilter function='member' level='[none:wicket_type:nk]' member='&quot;caught&quot;' />
+              <groupfilter function='member' level='[none:wicket_type:nk]' member='&quot;caught and bowled&quot;' />
+              <groupfilter function='member' level='[none:wicket_type:nk]' member='&quot;hit wicket&quot;' />
+              <groupfilter function='member' level='[none:wicket_type:nk]' member='&quot;lbw&quot;' />
+              <groupfilter function='member' level='[none:wicket_type:nk]' member='&quot;obstructing the field&quot;' />
+              <groupfilter function='member' level='[none:wicket_type:nk]' member='&quot;retired hurt&quot;' />
+              <groupfilter function='member' level='[none:wicket_type:nk]' member='&quot;retired out&quot;' />
+              <groupfilter function='member' level='[none:wicket_type:nk]' member='&quot;stumped&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[usr:Calculation_1089308200261566464:qk]' included-values='in-range'>
+            <min>1</min>
+            <max>10</max>
+          </filter>
+          <slices>
+            <column>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:wicket_type:nk]</column>
+            <column>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[usr:Calculation_1089308200261566464:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='204' />
+            <format attr='height' field='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:bowler:nk]' value='54' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[cnt:wicket_type:qk]' />
+              <text column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[cnt:wicket_type:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:bowler:nk]</rows>
+        <cols>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[cnt:wicket_type:qk]</cols>
+      </table>
+      <simple-id uuid='{339468B4-C44B-4A4A-B291-717FA9BBF079}' />
+    </worksheet>
+    <worksheet name='RUNS &gt;= 1K'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Times New Roman' fontsize='20'>PLAYER WITH MORE THAN 1K RUNS</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_match_ball_by_ball_data' name='federated.1gkiicz0c3m0xf12gzta81uq73lj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gkiicz0c3m0xf12gzta81uq73lj'>
+            <column-instance column='[striker]' derivation='None' name='[none:striker:nk]' pivot='key' type='nominal' />
+            <column caption='Runs Off Bat' datatype='integer' name='[runs_off_bat]' role='measure' type='quantitative' />
+            <column caption='Striker' datatype='string' name='[striker]' role='dimension' type='nominal' />
+            <column-instance column='[runs_off_bat]' derivation='Sum' name='[sum:runs_off_bat:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[sum:runs_off_bat:qk]' included-values='in-range'>
+            <min>1000</min>
+            <max>6634</max>
+          </filter>
+          <slices>
+            <column>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[sum:runs_off_bat:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[sum:runs_off_bat:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.0099999997764825821' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:striker:nk]</rows>
+        <cols>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[sum:runs_off_bat:qk]</cols>
+      </table>
+      <simple-id uuid='{4820D0E6-58FC-4C05-BF9F-02B21A263108}' />
+    </worksheet>
+    <worksheet name='TOSS/WINNER'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Times New Roman' fontsize='20'>MATCH WIN AFTER TOSS DECISION</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_match_ball_by_ball_data' name='federated.1gkiicz0c3m0xf12gzta81uq73lj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gkiicz0c3m0xf12gzta81uq73lj'>
+            <column-instance column='[toss_decision]' derivation='Count' name='[cnt:toss_decision:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[winner]' derivation='None' name='[none:winner:nk]' pivot='key' type='nominal' />
+            <column caption='Toss Decision' datatype='string' name='[toss_decision]' role='dimension' type='nominal' />
+            <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:winner:nk]' />
+              <wedge-size column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[cnt:toss_decision:qk]' />
+              <text column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:winner:nk]' />
+              <text column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[cnt:toss_decision:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7031491994857788' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{18CBB2C9-9DAD-4BF0-B326-D38667415295}' />
+    </worksheet>
+    <worksheet name='VIRAT RUNS'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Times New Roman' fontsize='20'>VIRAT RUNS IN EVERY SEASON</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_match_ball_by_ball_data' name='federated.1gkiicz0c3m0xf12gzta81uq73lj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gkiicz0c3m0xf12gzta81uq73lj'>
+            <column-instance column='[season]' derivation='None' name='[none:season:nk]' pivot='key' type='nominal' />
+            <column-instance column='[striker]' derivation='None' name='[none:striker:nk]' pivot='key' type='nominal' />
+            <column caption='Runs Off Bat' datatype='integer' name='[runs_off_bat]' role='measure' type='quantitative' />
+            <column caption='Season' datatype='string' name='[season]' role='dimension' type='nominal' />
+            <column caption='Striker' datatype='string' name='[striker]' role='dimension' type='nominal' />
+            <column-instance column='[runs_off_bat]' derivation='Sum' name='[sum:runs_off_bat:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:striker:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:striker:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;A Ashish Reddy&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;A Badoni&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;A Chandila&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;A Chopra&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;A Choudhary&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;A Dananjaya&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;A Flintoff&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;A Kumble&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;A Manohar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;A Mishra&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;A Mithun&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;A Mukund&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;A Nehra&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;A Nortje&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;A Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;A Symonds&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;A Tomar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;A Uniyal&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;A Zampa&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AA Bilakhia&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AA Chavan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AA Jhunjhunwala&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AA Noffke&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AB Agarkar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AB Barath&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AB de Villiers&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AB Dinda&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AB McDonald&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Abdul Samad&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Abdur Razzak&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Abhishek Sharma&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AC Blizzard&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AC Gilchrist&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AC Thomas&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AC Voges&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AD Hales&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AD Mascarenhas&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AD Mathews&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AD Nath&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AD Russell&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AF Milne&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AG Murtaza&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AG Paunikar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AJ Finch&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AJ Turner&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AJ Tye&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AK Markram&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Akash Deep&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AL Menaria&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AM Nayar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AM Rahane&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Aman Hakim Khan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AN Ahmed&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AN Ghosh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Anirudh Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Ankit Sharma&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Ankit Soni&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Anmolpreet Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Anuj Rawat&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Anureet Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AP Dole&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AP Majumdar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AP Tare&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AR Bawne&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AR Patel&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Arshdeep Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AS Joseph&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AS Rajpoot&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AS Raut&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AS Roy&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AS Yadav&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AT Carey&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AT Rayudu&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;AUK Pathan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Avesh Khan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Azhar Mahmood&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;B Akhil&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;B Chipli&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;B Indrajith&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;B Kumar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;B Laughlin&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;B Lee&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;B Sai Sudharsan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;B Stanlake&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;B Sumanth&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;BA Bhatt&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;BA Stokes&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Basil Thampi&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;BAW Mendis&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;BB McCullum&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;BB Samantray&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;BB Sran&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;BCJ Cutting&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;BE Hendricks&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Bipul Sharma&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;BJ Haddin&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;BJ Hodge&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;BJ Rohrer&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;BMAJ Mendis&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;BR Dunk&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;C de Grandhomme&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;C Madan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;C Munro&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;C Nanda&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;C Sakariya&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;CA Ingram&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;CA Lynn&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;CA Pujara&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;CH Gayle&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;CH Morris&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;CJ Anderson&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;CJ Ferguson&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;CJ Jordan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;CJ McKay&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;CK Kapugedera&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;CK Langeveldt&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;CL White&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;CM Gautam&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;CR Brathwaite&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;CR Woakes&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;CRD Fernando&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;CV Varun&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;D Brevis&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;D du Preez&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;D Kalyankrishna&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;D Padikkal&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;D Pretorius&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;D Salunkhe&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;D Wiese&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DA Miller&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DA Warner&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DAJ Bracewell&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DB Das&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DB Ravi Teja&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DE Bollinger&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DH Yagnik&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DJ Bravo&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DJ Harris&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DJ Hooda&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DJ Hussey&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DJ Jacobs&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DJ Malan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DJ Mitchell&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DJ Muthuswami&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DJ Thornely&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DJ Willey&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DJG Sammy&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DJM Short&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DL Chahar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DL Vettori&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DM Bravo&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DNT Zoysa&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DP Conway&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DP Nannes&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DP Vijaykumar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DPMD Jayawardene&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DR Martyn&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DR Sams&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DR Shorey&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DR Smith&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DS Kulkarni&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DS Lehmann&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DT Christian&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DT Patil&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;DW Steyn&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;E Lewis&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;EJG Morgan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;ER Dwivedi&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;F Behardien&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;F du Plessis&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;FA Allen&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Fazalhaq Farooqi&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;FH Edwards&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;FY Fazal&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;G Gambhir&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;GB Hogg&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;GC Smith&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;GC Viljoen&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;GD McGrath&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;GD Phillips&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;GH Vihari&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;GHS Garton&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;GJ Bailey&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;GJ Maxwell&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;GR Napier&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Gurkeerat Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;H Das&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;H Klaasen&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Harbhajan Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Harmeet Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Harpreet Brar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Harpreet Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Harshit Rana&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;HE van der Dussen&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;HF Gurney&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;HH Gibbs&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;HH Pandya&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;HM Amla&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;HR Shokeen&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;HV Patel&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;I Malhotra&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;I Sharma&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;I Udana&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;IC Pandey&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;IK Pathan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Imran Tahir&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Iqbal Abdulla&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;IR Jaggi&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;IS Sodhi&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Ishan Kishan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;J Arunkumar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;J Botha&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;J Suchith&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;J Syed Mohammad&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;J Theron&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;J Yadav&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JA Morkel&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JA Richardson&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Jaskaran Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JC Archer&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JC Buttler&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JD Ryder&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JD Unadkat&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JDP Oram&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JDS Neesham&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JE Taylor&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JEC Franklin&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JH Kallis&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JJ Bumrah&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JJ Roy&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JJ van der Wath&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JL Denly&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JL Pattinson&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JM Bairstow&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JM Kemp&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JM Sharma&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JO Holder&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Joginder Sharma&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JP Duminy&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JP Faulkner&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JPR Scantlebury-Searles&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JR Hazlewood&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JR Hopes&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;JR Philippe&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;K Goel&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;K Gowtham&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;K Kartikeya&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;K Rabada&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;K Upadhyay&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;K Yadav&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KA Jamieson&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KA Pollard&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KAJ Roach&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Kamran Akmal&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Kamran Khan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Karanveer Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Kartik Tyagi&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KB Arun Karthik&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KC Cariappa&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KC Sangakkara&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KD Karthik&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KH Pandya&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KJ Abbott&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KK Ahmed&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KK Cooper&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KK Nair&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KL Nagarkoti&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KL Rahul&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KM Jadhav&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KMA Paul&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KMDN Kulasekara&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KP Appanna&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KP Pietersen&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KR Sen&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KS Bharat&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KS Sharma&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KS Williamson&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Kuldeep Yadav&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KV Sharma&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;KW Richardson&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;L Ablish&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;L Balaji&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;L Ronchi&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;LA Carseldine&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;LA Pomersbach&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Lalit Yadav&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;LE Plunkett&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;LH Ferguson&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;LJ Wright&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;LMP Simmons&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;LPC Silva&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;LR Shukla&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;LRPL Taylor&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;LS Livingstone&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;M Ashwin&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;M de Lange&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;M Jansen&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;M Kaif&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;M Kartik&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;M Klinger&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;M Manhas&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;M Markande&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;M Morkel&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;M Muralitharan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;M Ntini&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;M Prasidh Krishna&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;M Rawat&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;M Shahrukh Khan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;M Theekshana&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;M Vijay&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;M Vohra&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MA Agarwal&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MA Khote&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MA Starc&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MA Wood&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Mandeep Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Mashrafe Mortaza&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MC Henriques&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MC Juneja&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MD Mishra&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MDKJ Perera&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MEK Hussey&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MF Maharoof&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MG Johnson&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Misbah-ul-Haq&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MJ Clarke&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MJ Guptill&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MJ Lumb&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MJ McClenaghan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MJ Santner&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MK Lomror&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MK Pandey&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MK Tiwary&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;ML Hayden&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MM Ali&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MM Patel&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MM Sharma&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MN Samuels&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MN van Wyk&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Mohammad Ashraful&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Mohammad Asif&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Mohammad Hafeez&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Mohammad Nabi&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Mohammed Shami&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Mohammed Siraj&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Mohsin Khan (2)&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MP Stoinis&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MR Marsh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MS Bisla&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MS Dhoni&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MS Gony&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MS Wade&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Mujeeb Ur Rahman&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Mukesh Choudhary&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Mustafizur Rahman&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;MV Boucher&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;N Jagadeesan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;N Pooran&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;N Rana&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;N Saini&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;NA Saini&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;ND Doshi&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Niraj Patel&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;NJ Maddinson&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;NJ Rimmington&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;NL McCullum&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;NLTC Perera&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;NM Coulter-Nile&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;NS Naik&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;NT Ellis&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;NV Ojha&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;OA Shah&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;OC McCoy&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;OF Smith&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;P Awana&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;P Chopra&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;P Dogra&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;P Dubey&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;P Kumar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;P Negi&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;P Parameswaran&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;P Ray Barman&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;P Sahu&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;P Simran Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;PA Patel&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;PA Reddy&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Pankaj Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Parvez Rasool&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;PBB Rajapaksa&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;PC Valthaty&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;PD Collingwood&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;PJ Cummins&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;PJ Sangwan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;PK Garg&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;PM Sarvesh Kumar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;PN Mankad&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;PP Chawla&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;PP Ojha&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;PP Shaw&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;PR Shah&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;PSP Handscomb&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;PV Tambe&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;PVD Chameera&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;PWH de Silva&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Q de Kock&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;R Ashwin&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;R Bhatia&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;R Bishnoi&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;R Dhawan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;R Dravid&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;R McLaren&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;R Ninan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;R Parag&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;R Powell&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;R Rampaul&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;R Sanjay Yadav&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;R Sathish&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;R Sharma&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;R Shepherd&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;R Shukla&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;R Tewatia&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;R Vinay Kumar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RA Bawa&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RA Jadeja&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RA Tripathi&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Ramandeep Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Rashid Khan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Rasikh Salam&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Ravi Bishnoi&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RD Chahar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RD Gaikwad&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RE Levi&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RE van der Merwe&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RG More&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RG Sharma&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RJ Harris&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RJ Peterson&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RJ Quiney&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RK Bhui&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RK Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RM Patidar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RN ten Doeschate&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RP Meredith&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RP Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RR Bhatkal&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RR Pant&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RR Powar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RR Raje&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RR Rossouw&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RR Sarwan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RS Bopara&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RS Gavaskar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RS Sodhi&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RT Ponting&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RV Gomez&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RV Patel&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;RV Uthappa&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;S Anirudha&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;S Aravind&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;S Badree&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;S Badrinath&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;S Chanderpaul&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;S Dhawan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;S Dube&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;S Gopal&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;S Kaul&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;S Kaushik&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;S Ladda&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;S Lamichhane&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;S Nadeem&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;S Narwal&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;S Rana&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;S Randiv&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;S Sohal&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;S Sreesanth&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;S Sriram&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;S Tyagi&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;S Vidyut&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SA Abbott&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SA Asnodkar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SA Yadav&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Sachin Baby&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Salman Butt&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Sandeep Sharma&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SB Bangar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SB Jakati&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SB Joshi&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SB Styris&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SB Wagh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SC Ganguly&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SD Chitnis&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SD Lad&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SE Bond&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SE Marsh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SE Rutherford&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Shahbaz Ahmed&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Shahid Afridi&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Shakib Al Hasan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Shashank Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Shivam Mavi&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Shivam Sharma&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Shoaib Ahmed&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Shoaib Akhtar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Shoaib Malik&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Shubman Gill&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Simarjeet Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SJ Srivastava&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SK Raina&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SK Trivedi&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SK Warne&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SL Malinga&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SM Curran&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SM Harwood&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SM Katich&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SM Pollock&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SMSM Senanayake&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SN Khan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SN Thakur&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SO Hetmyer&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Sohail Tanvir&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SP Fleming&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SP Goswami&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SP Jackson&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SP Narine&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SPD Smith&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SR Tendulkar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SR Watson&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SS Cottrell&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SS Iyer&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SS Prabhudessai&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SS Shaikh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SS Tiwary&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;ST Jayasuriya&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;STR Binny&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Sunny Gupta&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Sunny Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SV Samson&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SW Billings&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;SW Tait&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Swapnil Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;T Banton&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;T Henderson&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;T Kohli&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;T Natarajan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;T Shamsi&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;T Stubbs&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;T Taibu&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;T Thushara&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;TA Boult&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;TD Paine&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;TG Southee&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;TH David&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Tilak Varma&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;TK Curran&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;TL Seifert&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;TL Suman&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;TM Dilshan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;TM Head&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;TM Srivastava&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;TR Birt&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;TS Mills&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;TU Deshpande&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;U Kaul&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;UA Birla&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;UBT Chand&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Umar Gul&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Umran Malik&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;UT Khawaja&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;UT Yadav&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;V Pratap Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;V Sehwag&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;V Shankar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;VG Arora&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;VH Zol&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Virat Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Vishnu Vinod&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;VR Aaron&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;VR Iyer&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;VRV Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;VS Malik&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;VS Yeligati&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;VVS Laxman&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;VY Mahesh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;W Jaffer&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;WA Mota&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Washington Sundar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;WD Parnell&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;WP Saha&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;WPUJC Vaas&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;X Thalaivan Sargunam&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Y Gnaneswara Rao&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Y Nagar&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Y Prithvi Raj&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Y Venugopal Rao&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;YA Abdulla&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Yash Dayal&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Yashpal Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;YBK Jaiswal&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;YK Pathan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Younis Khan&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;YS Chahal&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Yuvraj Singh&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;YV Takawale&quot;' />
+                <groupfilter function='member' level='[none:striker:nk]' member='&quot;Z Khan&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:striker:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <text column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[sum:runs_off_bat:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='107' />
+                <format attr='maxwidth' value='107' />
+                <format attr='minheight' value='20' />
+                <format attr='maxheight' value='20' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:striker:nk] * [federated.1gkiicz0c3m0xf12gzta81uq73lj].[sum:runs_off_bat:qk])</rows>
+        <cols>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:season:nk]</cols>
+      </table>
+      <simple-id uuid='{49DF5FB4-2B7E-444C-BE73-279CDFE137E9}' />
+    </worksheet>
+    <worksheet name='WINNER/TEAM'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Times New Roman' fontsize='20'>NUMBER OF MATCHES WIN BY EVERY TEAM</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_match_ball_by_ball_data' name='federated.1gkiicz0c3m0xf12gzta81uq73lj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gkiicz0c3m0xf12gzta81uq73lj'>
+            <column-instance column='[match_number]' derivation='Count' name='[cnt:match_number:qk]' pivot='key' type='quantitative' />
+            <column caption='Match Number' datatype='integer' name='[match_number]' role='dimension' type='ordinal' />
+            <column-instance column='[winner]' derivation='None' name='[none:winner:nk]' pivot='key' type='nominal' />
+            <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:winner:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:winner:nk]' />
+              <groupfilter function='member' level='[none:winner:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:winner:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[cnt:match_number:qk]' field-type='quantitative' max='139' min='-3' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:winner:nk]' />
+              <text column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[cnt:match_number:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[cnt:match_number:qk]</rows>
+        <cols>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:winner:nk]</cols>
+      </table>
+      <simple-id uuid='{57E99D41-65E5-4D25-B984-64F3D3AAA2EA}' />
+    </worksheet>
+    <worksheet name='WINNER/VENUE'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7' fontname='Times New Roman' fontsize='20'>MATCH WIN AT EVERY VENUE</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ipl_match_ball_by_ball_data' name='federated.1gkiicz0c3m0xf12gzta81uq73lj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1gkiicz0c3m0xf12gzta81uq73lj'>
+            <column-instance column='[winner]' derivation='Count' name='[cnt:winner:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[venue]' derivation='None' name='[none:venue:nk]' pivot='key' type='nominal' />
+            <column caption='Venue' datatype='string' name='[venue]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <lod column='[federated.1gkiicz0c3m0xf12gzta81uq73lj].[cnt:winner:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[cnt:winner:qk]</rows>
+        <cols>[federated.1gkiicz0c3m0xf12gzta81uq73lj].[none:venue:nk]</cols>
+      </table>
+      <simple-id uuid='{15EC450F-30B9-4871-A8DF-51B67B8CFBF5}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='7' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{03F20B1B-BB38-414D-A5FA-D0E8EE314AD5}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='44'>
+    <window class='worksheet' name='MATCHES/CITIES'>
+      <cards>
+        <edge name='left'>
+          <strip size='156'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{7BBA1421-B2C4-4ECF-99BF-829301B777CD}' />
+    </window>
+    <window class='worksheet' maximized='true' name='MATCHES/YEAR'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9A65DB0E-AC4D-4472-86D1-B7E5C358B346}' />
+    </window>
+    <window class='worksheet' name='WINNER/TEAM'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6BE6E215-1581-4CE7-AF55-B107DB70B2EB}' />
+    </window>
+    <window class='worksheet' name='WINNER/VENUE'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B5D51D15-2116-4173-87D0-B44F35BCD926}' />
+    </window>
+    <window class='worksheet' name='TOSS/WINNER'>
+      <cards>
+        <edge name='left'>
+          <strip size='226'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B92D3BB7-B622-4535-9857-3F1A854CE9EC}' />
+    </window>
+    <window class='worksheet' name='MOST POTM'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E05CA4B7-0623-4D56-869E-012ACC985A9D}' />
+    </window>
+    <window class='worksheet' name='RUNS &gt;= 1K'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{D7540D12-1EE7-4E93-A184-7E37F64536AF}' />
+    </window>
+    <window class='worksheet' name='VIRAT RUNS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2A1632C7-1D67-41E1-A34A-B25EC055410B}' />
+    </window>
+    <window class='worksheet' name='MOST RUNS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{622CFBE3-EF35-47E1-AE36-A80ED634CC65}' />
+    </window>
+    <window class='worksheet' name='MOST WICKETS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2D57A30F-F988-48CC-8583-E11927F1201A}' />
+    </window>
+    <window class='worksheet' name='MOST SIXES'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2C932115-F282-4D76-BE32-545A27A00858}' />
+    </window>
+    <window class='worksheet' name='MOST FOURS'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{1635C28B-AAF4-4B15-9BD1-0F6671EBE857}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{DDA4A516-07DA-4CE3-9C02-F2DC8AA9481A}' />
+    </window>
+  </windows>
+</workbook>
